@@ -27,4 +27,23 @@ l,b=map(int,input().split(" "))
 print("Area of a rectangle is ",l*b)
 print("perimeter of a rectangle is ",2*(l+b))
 
+#using sqrt for prime number
+#6
+def is_prime(num):
+    if num<=1:
+        return False
+    for i in range(2,int(num**0.5)+1):
+        if num%i==0:
+            return False
+    else:
+        return True
+number=int(input())
+if is_prime(number):
+    print(f"{number} is a prime number")  
+else:
+    print(f"{number} is not a prime number")      
+
+
+
+
 
