@@ -1,49 +1,37 @@
-'''WAPP find area of circle 
-WAP to find perimeter of a circle
-WAp to find area of a triangle
-WAP to find perimeter of a triangle
-WAP to find area and perimeter of a rectangle 
-WAP to find the sqrt method for the prime number'''
+'''  middle (8)th line is very very important(logic)
+1 and the 3 line are common for all
+sum of the digits '''
+n=int(input())
+sum=0
+while(n>0):
+    rem=n%10
+    sum+=rem
+    n//=10
+print(sum)   
 
 
-#1
-radius=int(input())
-print("Area of circle",3.14*radius*radius)
-
-#2
-r=int(input())
-print("Perimeter of circle is",2*3.14*r)
-
-#3
-l,b=map(int,input().split(" "))
-print("Area of triangle is",0.5*(l*b))
-
-#4
-l,b,h=map(int,input().split(" "))
-print("Perimeter of a triangle is ",l+b+h)
-
-#5
-l,b=map(int,input().split(" "))
-print("Area of a rectangle is ",l*b)
-print("perimeter of a rectangle is ",2*(l+b))
-
-#using sqrt for prime number
-#6
-def is_prime(num):
-    if num<=1:
-        return False
-    for i in range(2,int(num**0.5)+1):
-        if num%i==0:
-            return False
-    else:
-        return True
-number=int(input())
-if is_prime(number):
-    print(f"{number} is a prime number")  
-else:
-    print(f"{number} is not a prime number")      
+''' find the sum of squares of a digit 
+123
+1*1+2*2+3*3====1+4+9===14'''
+n=123
+s=0
+while(n>0):
+    rem=n%10
+    s+=rem*rem
+    n//=10
+print(s)    
 
 
 
+'''
+1234==2+4===6
 
-
+'''
+n=1234
+sum=0
+while n>0:
+    r=n%10
+    if(r%2==0):
+        sum+=r
+    n//=10
+print(sum)   

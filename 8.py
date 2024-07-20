@@ -1,17 +1,15 @@
-'''WAP GIVEN A  SPACE SEPERATED INTEGER LIST 
-FIND THE AVG OF ELEMETS PRESENT IN THE EVEN INDEX  
-'''
+''' WAP to find the reverse of a number'''
 
-list11=list(map(int,input().split(" ")))
-avg=0
-sum=0
-count=0
-a=len(list11)
-print(a)
-for i in range(0,len(list11)):
-    if(i%2==0):
-        sum+=list11[i]
-        count+=1
-avg=sum/count
-print(avg)        
 
+n=int(input())
+rem=0
+rev=" "
+#rev=0
+while(n>0):
+    rem=n%10
+    rev=rev+str(rem)
+    #rev=rev*10+rem
+    n=n//10
+print(rev)    
+#print(int(rev))
+#type(rev)
