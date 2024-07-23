@@ -1,55 +1,42 @@
-''''password verifier
-mister x is trying to create a new password for his insta account these are required conditions for creating a new password
-condition -1:minimum length-8 and maximum length-15
-condition-2: only "@,/"is allowed in a password
-condition-3: no spaces are allowed 
-condition -4:only alphanumerics are allowed 
+''''substring questions
+strings are sequence of chars
+strings are mutable
+cant be modified
+indexing and "for i in str"
+advantages:personal details
+different string  methods:len,cancatenate="+",is_digit,is_alpha,is_prime,is_alphabumeric==isalnum,title==combination,
+trip,islower(),isupper(),swap()
+ASCII  VALUES
+65-91===A-Z=====
+97-122====a-z
+digits-====48-57====0-9
 
-you are supposed to print weak if length is exact 8
-medium length is between 8 to 12
-strong if lenght is between 12 to 15
 '''
-# str=input()
-# contains=str
-# a=len(str)
+# n=int(input())
 # c=0
-# #s="@,/"
-# if(str=" "):
-#     print("follow conditions")
-# for i in str:
-#     if(a>8 and a<=12 and i=='@' or i=='/'):
-#         print("medium")
-#         break
-#     elif(a>12 and a<=15 and i=='@' or i=='/'):
-#         print("strong")    
-#         break
-#     elif(a==8 and i=='@' or i=='/'):
-#         print("weak")  
-#         break
-    
+# for i in range(2,int(n**(0.5))):
+#     if n%i==0:
+#         c+=1
+# if(c==0):
+#     print("prime")  
+# else:
+#     print("not prime")          
 
-
-password=input()
-n=len(password)
-count=0
-if n<8:
-    print("follow conditions")
-str="@,/"  
-str[0]='@' 
-str[1]='/'
-for i in password:
-    if(i in str[0] or str[i] and i!=" "):
-        count+=1
-        if(n==8):
-            print("weak")
-        elif(n>8 and n<=12):
-            print("medium")
-        elif(n<12 and n<=15):
-            print("strong")
-
-
-        
-
-
+str=input()
+l=len(str)
+print(l)
+# #print(isLowerCase(str))
+# #print(str.LowerCase())
+# print(isAlpha(str))
+print(str.lower(),"29")
+print(str.upper(),"30")
+print(str.title(),"31")
+print(str.swapcase(),"32")
+print(str.capitalize(),"33")# in midddle of a string if any capital letters it will remove
+print(str.strip(),"36")# start and end spaces are removed
+print(str.replace('a','s'),"37")
+print(str.split(),"38")#default it will the 2 different strings
+print(str.split('a'),"39")# it will split at the particular character
+print(str.swapcase(),"40")
 
 
