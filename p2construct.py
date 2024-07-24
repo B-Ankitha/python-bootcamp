@@ -1,10 +1,13 @@
-'''oops
-def which is outside the class is a function
-def which is inside the class is a method
-class variable is declared inside the class
-instance variable is declared in instance of class or method of class
-'''
+'''constructor===execution starts from here
+default exection starts without the declaration of variables
+self===good practise'''
+'''destructor====it manages like garbage collectors'''
 class Myclass:
+    #def --init-- is used for dynamic
+    cla_var="Iam class variable"
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
     def add(a,b):
         return a+b
     def sub(a,b):
